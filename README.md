@@ -38,7 +38,7 @@ docker run -d \
     -e OPENAI_API_KEY=your_api_key_here \           # Required
     -e OPENAI_API_HOST=https://api.openai.com \     # Optional
     -e RATE_LIMIT=20r/m \                           # Optional
-    ghcr.io/badgerhobbs/openai-api-gateway:latest
+    ghcr.io/badgerhobbs/openai-api-gateway:main
 ```
 
 ##### Azure OpenAI API
@@ -50,7 +50,7 @@ docker run -d \
     -e OPENAI_API_KEY=your_api_key_here \                                   # Required
     -e OPENAI_API_HOST=https://my-azure-openai-api.openai.azure.com \       # Required
     -e RATE_LIMIT=20r/m \                                                   # Optional
-    ghcr.io/badgerhobbs/openai-api-gateway:latest
+    ghcr.io/badgerhobbs/openai-api-gateway:main
 ```
 
 #### Docker Compose
@@ -62,7 +62,7 @@ version: '3'
 services:
 
   openai-api-gateway:
-    image: ghcr.io/badgerhobbs/openai-api-gateway:latest
+    image: ghcr.io/badgerhobbs/openai-api-gateway:main
     container_name: openai-api-gateway
     ports:
       - 80:80
@@ -74,7 +74,7 @@ services:
     restart: unless-stopped
 
   azure-openai-api-gateway:
-    image: ghcr.io/badgerhobbs/openai-api-gateway:latest
+    image: ghcr.io/badgerhobbs/openai-api-gateway:main
     container_name: azure-openai-api-gateway
     ports:
       - 80:80
