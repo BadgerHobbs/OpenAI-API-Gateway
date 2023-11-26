@@ -6,7 +6,11 @@ The OpenAI-API-Gateway is a simple NGINX web server which acts as a proxy, forwa
 
 The OpenAI-API-Gateway supports both custom API servers using API key Authorization headers, as well as the Azure OpenAI API service. Both are configurable via environment variables.
 
+![diagram](https://github.com/BadgerHobbs/OpenAI-API-Gateway/assets/23462440/e5444282-275d-4b44-99d1-8a65c685a6d9)
+
 ## Setup
+
+The sections below detail how to configure and deploy the OpenAI-API-Gateway, with examples for both the OpenAI and Azure OpenAI APIs.
 
 ### Configuration
 
