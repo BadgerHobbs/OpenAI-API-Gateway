@@ -1,6 +1,6 @@
 # OpenAI-API-Gateway
 
-### Overview
+## Overview
 
 The OpenAI-API-Gateway is a simple NGINX web server which acts as a proxy, forwarding OpenAI API requests from the client. It is configured to accept a gateway API key from the client for gateway authentication. The OpenAI API key is then set on all requests made to OpenAI, meaning the client never has access to it.
 
