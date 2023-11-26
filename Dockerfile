@@ -2,7 +2,6 @@ FROM nginx:latest
 
 # Default environment variable values
 ENV OPENAI_API_HOST=https://api.openai.com
-ENV AZURE_OPENAI_API=False
 ENV RATE_LIMIT=20r/m
 
 # Copy gateway configuration
