@@ -124,7 +124,7 @@ curl http://localhost:80/v1/chat/completions \
   }'
 ```
 
-### OpenAI API Curl Request
+### OpenAI API cURL Request
 
 With the OpenAI-API-Gateway hosted locally, you can make a request to the Azure OpenAI API using cURL with a command similar to the following.
 
