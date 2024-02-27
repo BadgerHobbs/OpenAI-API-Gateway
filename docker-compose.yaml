@@ -1,0 +1,13 @@
+version: '3'
+services:
+  openai-api-gateway:
+    build: .
+    container_name: openai-api-gateway
+    ports:
+      - 80:40000
+    environment:
+      - GATEWAY_API_KEY=super_secret_api_key                               # Required
+      - OPENAI_API_KEY=$OPENAI_API_KEY                                     # Required
+      - OPENAI_API_HOST=https://api.openai.com                             # Optional
+      - RATE_LIMIT=20r/m                                                   # Optional
+    restart: unless-stopped
