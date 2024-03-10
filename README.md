@@ -38,6 +38,14 @@ docker run -d \
     -e OPENAI_API_KEY=your_api_key_here \           # Required
     -e OPENAI_API_HOST=https://api.openai.com \     # Optional
     -e RATE_LIMIT=20r/m \                           # Optional
+    -e CLIENT_MAX_BODY_SIZE=25m \                   # Optional
+    -e CORS_ORIGIN=* \                              # Optional
+    -e CORS_METHODS=* \                             # Optional
+    -e CORS_HEADERS=* \                             # Optional
+    -e CORS_CREDENTIALS=true \                      # Optional
+    -e CORS_MAX_AGE=86400 \                         # Optional
+    -e CONTENT_LENGTH=0 \                           # Optional
+    -e CONTENT_TYPE=text/plain charset=UTF-8 \      # Optional
     ghcr.io/badgerhobbs/openai-api-gateway:main
 ```
 
@@ -50,6 +58,14 @@ docker run -d \
     -e OPENAI_API_KEY=your_api_key_here \                                   # Required
     -e OPENAI_API_HOST=https://my-azure-openai-api.openai.azure.com \       # Required
     -e RATE_LIMIT=20r/m \                                                   # Optional
+    -e CLIENT_MAX_BODY_SIZE=25m \                                           # Optional
+    -e CORS_ORIGIN=* \                                                      # Optional
+    -e CORS_METHODS=* \                                                     # Optional
+    -e CORS_HEADERS=* \                                                     # Optional
+    -e CORS_CREDENTIALS=true \                                              # Optional
+    -e CORS_MAX_AGE=86400 \                                                 # Optional
+    -e CONTENT_LENGTH=0 \                                                   # Optional
+    -e CONTENT_TYPE=text/plain charset=UTF-8 \                              # Optional
     ghcr.io/badgerhobbs/openai-api-gateway:main
 ```
 
